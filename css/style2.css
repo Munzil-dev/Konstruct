@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, ul, li {
+    list-style: none;
+    text-decoration: none; 
+}
+a {
+    color: #333; 
+}
+a:hover {
+    text-decoration: none; 
+}
+
+.main-flex {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.main-flex .item {
+    width: 196px;
+    height: 96px;
+    background-color: #7fff00;
+    border: 2px solid #000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 96px;
+}
+.main-flex .item3 {
+    order: 1;
+}
+
+.main-grid {
+    max-width: 1000px;
+    width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.main-grid .item{
+    width: 200px;
+    height: 200px;
+    background: #ffaa00;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+.photos {
+    display: grid;
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+    grid-template-areas: 
+        "it1 it1 it1 it3"
+        "it2 it2 it2 it3"
+        "it2 it2 it2 it4"
+        "it2 it2 it2 it5"
+    ;    
+    gap: 15px;
+}
+.photos .item1 {
+    grid-area: it1;
+}
+.photos .item2 {
+    grid-area: it2;
+}
+.photos .item3 {
+    grid-area: it3;
+}
+.photos .item4 {
+    grid-area: it4;
+}
+.photos .item5 {
+    grid-area: it5;
+}
+.photos img {
+    width: 100%;
+    height: 100%;
+}
